@@ -46,12 +46,12 @@ const handleDone = (details) => {
         <h2>{profileDetails.name}</h2>
         <div className='profile-content'>
           <div className='anchor-flex'>
-          <a href={profileDetails.phone}><span><AiOutlineWhatsApp/></span>{profileDetails.phone}</a>
-          <a href={profileDetails.email}><span><AiOutlineMail/></span>{profileDetails.email}</a>
+          <a href={profileDetails.phone}><span  style={{ color: 'green' }} ><AiOutlineWhatsApp/></span>{profileDetails.phone}</a>
+          <a href={profileDetails.email}><span  style={{ color: 'purple' }}><AiOutlineMail/></span>{profileDetails.email}</a>
           </div>
           <div className='anchor-flex'>
-          <a href={profileDetails.instagram}><span><AiOutlineInstagram/></span>{profileDetails.instagram}</a>
-          <a href={profileDetails.youtube}><span><AiOutlineYoutube/></span>{profileDetails.name}</a>
+          <a href={profileDetails.instagram}><span  style={{ color: 'pink' }}><AiOutlineInstagram/></span>{profileDetails.instagram}</a>
+          <a href={profileDetails.youtube}><span  style={{ color: 'red' }}><AiOutlineYoutube/></span>{profileDetails.name}</a>
           </div>
         </div>
       </div> }

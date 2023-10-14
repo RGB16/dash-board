@@ -64,6 +64,7 @@ const Modal = ({ onClose, onDone}) => {
             name="name"
             value={formData.name}
             onChange={handleInputChange}
+            placeholder="Eg.John Doe" 
           />
                 <label>Enter Email*</label>
                 <input
@@ -71,6 +72,7 @@ const Modal = ({ onClose, onDone}) => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
+            placeholder="Eg.John@xyz.com"
           />
                 <label>Enter Phone</label>
                 <input
@@ -78,6 +80,8 @@ const Modal = ({ onClose, onDone}) => {
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
+            placeholder="Eg.9123456789"
+               
           />
                 <button onClick={() => switchTab('Social')}>Next</button>
               </div>
@@ -90,6 +94,7 @@ const Modal = ({ onClose, onDone}) => {
             name="instagram"
             value={formData.instagram}
             onChange={handleInputChange}
+            placeholder="Eg. ..instagram.com/username"
           />
                 <label>Youtube Link <span style={{ color: '#999CA0' }} >(optional)</span></label>
                 <input
@@ -97,6 +102,7 @@ const Modal = ({ onClose, onDone}) => {
             name="youtube"
             value={formData.youtube}
             onChange={handleInputChange}
+            placeholder="Eg. ..youtube/username"
           />
                 <button onClick={() => switchTab('Basic')}>Back</button>
                 <button onClick={handleDoneClick}>Done</button>
