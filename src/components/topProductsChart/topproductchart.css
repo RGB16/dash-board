@@ -1,0 +1,113 @@
+.top-products-chart {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #E0E0E0;
+    box-shadow: 4px 4px 20px 0px #0000001A;
+    /* background: linear-gradient(0deg, #E0E0E0, #E0E0E0),linear-gradient(0deg, #FFFFFF, #FFFFFF); */
+    border-radius: 15px;
+}
+  .top-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  
+  .chart {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+  .percentage {
+font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+color: #858585;
+
+
+  }
+  
+  .date {
+    font-size: 16px;
+    text-align: right;
+  }
+  
+  .top-left img {
+    width: 180px;
+    height: 180px;
+}
+
+
+.right-product-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dot-trees {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #98D89E;
+    position: absolute;
+    top: 28px;
+    left: -24px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.dot-pants {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F6DC7D;
+    position: absolute;
+    top: 28px;
+    left: -24px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.dot-hoodies {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 28px;
+    left: -24px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+background-color: #EE8484;
+
+}
+
+.product-ring {
+    position: relative;
+}
+
+
+
+
+

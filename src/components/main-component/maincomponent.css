@@ -1,0 +1,31 @@
+.main-component {
+  flex: 1;
+  margin: 0 36px;
+  
+ 
+}
+
+.frames-container {
+  justify-content: space-between;
+  flex: 1;
+}
+
+.main-bottom {
+  display: flex;
+  justify-content: space-between;
+ margin-bottom: 24px;
+  padding:12px;
+}
+
+.bottom-left {
+  flex: 1;
+
+
+
+}
+
+.bottom-right {
+  flex: 1;
+}
+
+

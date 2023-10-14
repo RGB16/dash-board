@@ -1,0 +1,179 @@
+/* BarChart.css */
+.bar-chart {
+  text-align: center;
+  border-width: 0px, 0px, 0px, 0px;
+  border-style: solid;
+  border-color: #eaeaea;
+  border-radius: 10px;
+  margin: 14px;
+  padding:4px 0px;
+position: relative;
+}
+
+.bar-chart h2 {
+  font-size: 24px;
+  margin-bottom: -10px;
+  text-align: left;
+}
+
+.bar-heading {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar-right {
+    display: flex;
+    align-items: center;
+    padding: 48px;
+    margin-right: 24px;
+
+}
+.bar-right-guests {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.bar-right-users {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.bar-right-dot1{
+    width: 10px;
+    height: 10px;
+    background-color: #E9A0A0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bar-right-dot2{
+    width: 10px;
+    height: 10px;
+    background-color: #9BDD7C;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+p {
+    text-align: left;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 48px 10px ;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  margin-right: 96px;
+  z-index: 10;
+  margin-top: 16px;
+}
+
+.bar {
+  width: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: #98D89E;
+}
+
+.week-label {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 44px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    padding-left:48px;
+    margin-top: 6px;
+}
+
+.score {
+    padding: 8px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.line-5 {
+    position: absolute;
+    border-bottom: 2px solid #EAEAEA;
+    top: 33.5%;
+    left: 14%;
+    width: 80%;
+    transform: rotate(90);
+    z-index: 1;
+}
+
+.line-2 {
+    position: absolute;
+    border-bottom: 2px solid #EAEAEA;
+    top: 42.8%;
+    left: 14%;
+    width: 80%;
+    transform: rotate(90);
+    z-index: 1;
+}
+
+.line-3 {
+    position: absolute;
+    border-bottom: 2px solid #EAEAEA;
+    top: 52.3%;
+    left: 14%;
+    width: 80%;
+    transform: rotate(90);
+    z-index: 1;
+}
+
+.line-4 {
+    position: absolute;
+    border-bottom: 2px solid #EAEAEA;
+    top: 61.3%;
+    left: 14%;
+    width: 80%;
+    transform: rotate(90);
+    z-index: 1;
+}
+.line-1 {
+    position: absolute;
+    border-bottom: 2px solid #EAEAEA;
+    top: 70.6%;
+    left: 14%;
+    width: 80%;
+    transform: rotate(90);
+    z-index: 1;
+}
+
+.line-0 {
+    position: absolute;
+    border-bottom: 2px solid #EAEAEA;
+    top: 80%;
+    left: 14%;
+    width: 80%;
+    transform: rotate(90);
+    z-index: 1;
+}

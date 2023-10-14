@@ -1,0 +1,113 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background-image: url("../../assets/left-side-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  top: 59.81px;
+  left: 72.99px;
+  color: #ffffff;
+}
+
+.board {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+font-size: 72px;
+font-weight: 700;
+line-height: 88px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36%;
+  height: 100%;
+}
+
+.right {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+h2 {
+
+font-size: 36px;
+font-weight: 700;
+/* line-height: 44px; */
+/* letter-spacing: 0em; */
+text-align: left;
+
+}
+
+.google-signin,
+.apple-signin {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.signin-btns {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-left: 40px;
+
+  input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+  }
+}
+.blue-signin {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
