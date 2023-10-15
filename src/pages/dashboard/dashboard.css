@@ -1,27 +1,36 @@
-/* src/components/Dashboard/Dashboard.css */
 
 .dashboard {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
 
 .sidebar-container {
-  flex: .25;
+  display: none;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
-  overflow-x: hidden;
-  flex: 1.5;
-  background-color: #F8FAFF;
-}
-
-.navbar-container {
   flex: 1;
+  background-color: #F8FAFF;
+  overflow-x: auto;
 }
 
-/* Add media queries or additional styles as needed for responsiveness */
+
+@media (min-width: 768px) {
+  .dashboard {
+    flex-direction: row;
+  }
+
+  .sidebar-container {
+    flex: 0.25;
+    display: block; 
+  }
+
+  .content {
+    flex: 1.5;
+    overflow-x: hidden;
+  }
+}

@@ -73,7 +73,7 @@ text-align: left;
 
 .google-signin,
 .apple-signin {
-  background-color: #f0f0f0;
+  background-color: #dadbe0;
   border: none;
   padding: 10px 20px;
   margin: 10px;
@@ -100,7 +100,7 @@ form {
   }
 }
 .blue-signin {
-  background-color: blue;
+  background-color:#4285F4;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -109,5 +109,27 @@ form {
 
 a {
   text-decoration: none;
-  color: blue;
+  color:#4285F4;
+}
+
+@media (max-width: 768px) {
+  .left {
+     display: none;
+  }
+  
+  .right {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    align-items: center;
+  
+  }
+  
+  .board {
+    font-size: 48px;
+    margin-top: 100px;
+  }
+  
+  .social-icons {
+    width: 100%;
+    justify-content: center;
+  }
 }
