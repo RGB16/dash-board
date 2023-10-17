@@ -11,7 +11,7 @@ const Modal = ({ onClose, onDone}) => {
     name: '',
     email: '',
     phone: '',
-    instagram: '',
+    instagram: '', 
     youtube: '',
   });
 

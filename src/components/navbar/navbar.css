@@ -59,3 +59,33 @@ input {
   top: 0;
   right: 32px;
 }
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .title {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-right {
+    flex: 1;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .searchIcon {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  #bellIcon {
+    display: none;
+  }
+}

@@ -1,3 +1,6 @@
+.bar-chart-container {
+  overflow-x: auto; /* Add horizontal scrolling */
+}
 .bar-chart {
   text-align: center;
   border-width: 0px, 0px, 0px, 0px;
@@ -7,7 +10,14 @@
   margin: 14px;
   padding:4px 0px;
 position: relative;
+white-space: nowrap;
+
 }
+
+
+
+
+
 
 .bar-chart h2 {
   font-size: 24px;
@@ -175,4 +185,18 @@ p {
     width: 80%;
     transform: rotate(90);
     z-index: 1;
+}
+
+
+.bar-chart-container {
+  overflow-x: auto;
+}
+
+
+@media (max-width: 768px) {
+  .bar-chart {
+    margin: 14px 0;  
+    width: fit-content;
+  }
+
 }

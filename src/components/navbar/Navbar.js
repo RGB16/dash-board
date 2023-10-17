@@ -15,7 +15,7 @@ const Navbar = () => {
               <GoSearch size={16} />
             </div>
         </div>
-        <BiBell size={24} />
+        <BiBell id="bellIcon" size={24} />
         <img src="./assets/profile-picture.png" alt="Profile"/>
       </div>
     </div>

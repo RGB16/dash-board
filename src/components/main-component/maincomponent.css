@@ -6,6 +6,8 @@
 .frames-container {
   justify-content: space-between;
   flex: 1;
+  /* flex-wrap: wrap; */
+  
 }
 
 .main-bottom {
@@ -29,10 +31,27 @@
     margin: 0 8px; 
   }
 
-  .main-bottom {
-    margin-bottom: 8px; 
-    padding: 4px; 
+  .frames-container {
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+    
   }
+
+  .main-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .bottom-left {
+    flex: -1;
+  }
+  
+  .bottom-right {
+    flex: -2;
+  }
+  
 }
 
 
@@ -45,4 +64,5 @@
     margin-bottom: 4px; 
     padding: 2px; 
   }
+
 }
