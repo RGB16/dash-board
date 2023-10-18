@@ -7,14 +7,14 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
 const Login = ({ setUser }) => {
-  const [isSignIn, setIsSignIn] = useState(true); // Initially, set to sign-in mode
+  const [isSignIn, setIsSignIn] = useState(true);
 
   const handleUser = () => {
     setUser(true);
   };
 
   const toggleMode = (event) => {
-    event.preventDefault(); // Prevent the default behavior of the anchor tag
+    event.preventDefault(); 
     setIsSignIn(!isSignIn);
   };
 
@@ -50,7 +50,7 @@ const Login = ({ setUser }) => {
           <label>Password</label>
           <input type="password" placeholder="Password" />
           <p>
-            <a id="fp" href="/" onClick={toggleMode}>
+            <a   href="/" onClick={toggleMode}>
               {isSignIn ? "Forgot password?" : "Remember your password?"}
             </a>
           </p>

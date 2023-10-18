@@ -1,15 +1,14 @@
-// BarChart.js
+
 import React from 'react';
 import './barchart.css';
 
 const BarChart = () => {
-  // Sample data (you can replace this with your actual data)
+
   const data = [
     { week: 'Week 1', guests: 400, users: 500 },
     { week: 'Week 2', guests: 450, users: 350 },
     { week: 'Week 3', guests: 300, users: 200 },
     { week: 'Week 4', guests: 350, users: 400 },
-    // Add more weeks and data as needed
   ];
 
   return (
