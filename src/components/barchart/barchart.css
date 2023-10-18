@@ -193,10 +193,28 @@ p {
 }
 
 
+
+@media  (max-width:1370px) and (min-width: 768px){
+  .bar-chart {
+    margin: 14px 0;  
+    width: fit-content;
+  }
+
+
+}
+
 @media (max-width: 768px) {
   .bar-chart {
     margin: 14px 0;  
     width: fit-content;
   }
 
+}
+
+@media (min-width:1370) {
+
+    .bar-chart {
+    margin: 14px 0;  
+    width: fit-content;
+  }
 }
