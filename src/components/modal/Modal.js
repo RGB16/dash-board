@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './modal.css'; // Import your CSS file for styling
+import './modal.css'; 
 
 
 const Modal = ({ onClose, onDone}) => {
@@ -25,7 +25,7 @@ const Modal = ({ onClose, onDone}) => {
   };
 
   const handleDoneClick = () => {
-    onDone(formData); // Pass the details back to the parent component
+    onDone(formData); 
   };
   const switchTab = (tab) => {
     setCurrentTab(tab);

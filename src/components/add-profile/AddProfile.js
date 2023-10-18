@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './addprofile.css'; // Import your component's CSS
+import './addprofile.css';
 import Modal from '../modal/Modal';
 import {AiOutlineInstagram,AiOutlineWhatsApp,AiOutlineMail,AiOutlineYoutube} from 'react-icons/ai';
 
@@ -55,7 +55,7 @@ const handleDone = (details) => {
           <a  className='profile_a' href={profileDetails.youtube}><span  style={{ color: 'red' }}><AiOutlineYoutube/></span>{ profileDetails.youtube}</a>
           </div>
         </div>
-      </div> }
+      </div> }
     </div>
   );
 };

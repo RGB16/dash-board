@@ -5,7 +5,6 @@
   border: 2px solid #e0e0e0;
   box-shadow: 4px 4px 20px 0px #0000001a;
   height: 100%;
-  /* margin-left: 20px; */
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -34,13 +33,13 @@ gap: 12px;
 }
 
 .add-icon {
-  font-size: 80px;
+  font-size: 60px;
   color: #999ca0;
   cursor: pointer;
   background: linear-gradient(0deg, #EBEBEB, #EBEBEB),
 linear-gradient(0deg, #F5F5F5, #F5F5F5);
 padding: 10px;
-border-radius: 70%;
+border-radius: 120%;
 
 }
 
@@ -109,7 +108,6 @@ button:hover {
 
 
 .profile_a{
-
 font-family: Figtree;
 font-size: 18px;
 font-weight: 400;
@@ -124,6 +122,17 @@ padding: 10px;
 
 
 @media (max-width: 768px) {
+  .text-profile {
+    margin-bottom: 70px;
+  }
+
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    height:auto;
+    box-shadow: none;
+  }
 
   .modal {
     position: fixed;
@@ -136,15 +145,24 @@ padding: 10px;
     justify-content: center;
     align-items: center;
     z-index: 1;
-
-  }
-
-  .add-icon {
-    padding: 2px;
-    font-size: 50px;
-
   
   }
 
+  .add-icon {
+    margin-top: 60px;
+    padding: 4px;
+    font-size: 50px;
+  
+  }
 
+  .anchor-flex {
+  display: flex;
+  gap: 4px;
+  }
+
+  .profile_a{
+    padding: 0px;
+    flex-direction: column;
+
+    }
 }
