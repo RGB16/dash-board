@@ -62,13 +62,10 @@ text-align: left;
 }
 
 h2 {
-
 font-size: 36px;
 font-weight: 700;
-/* line-height: 44px; */
-/* letter-spacing: 0em; */
 text-align: left;
-margin: 0px;
+margin: 5px;
 
 }
 
@@ -76,7 +73,6 @@ margin: 0px;
 .apple-signin {
   background-color: unset;
   color: #858585;
-
   border: none;
   padding: 10px 20px;
   margin: 10px;

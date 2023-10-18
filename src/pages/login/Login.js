@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 import { FaGithub } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
@@ -7,9 +7,17 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
 const Login = ({ setUser }) => {
+  const [isSignIn, setIsSignIn] = useState(true); // Initially, set to sign-in mode
+
   const handleUser = () => {
     setUser(true);
   };
+
+  const toggleMode = (event) => {
+    event.preventDefault(); // Prevent the default behavior of the anchor tag
+    setIsSignIn(!isSignIn);
+  };
+
   return (
     <div className="login-page">
       <div className="left">
@@ -23,19 +31,17 @@ const Login = ({ setUser }) => {
         </div>
       </div>
 
-
-      
       <div className="right">
-        <h2>Sign In</h2>
-        <p>Sign in to your account</p>
+        <h2>{isSignIn ? "Sign In" : "Sign Up"}</h2>
+        <p>{isSignIn ? "Sign in to your account" : "Create a new account"}</p>
         <div className="signin-btns">
           <button className="google-signin">
             <FcGoogle size={16} style={{ marginRight: 10 }} />
-            Sign in with Google
+            {isSignIn ? "Sign in with Google" : "Sign up with Google"}
           </button>
           <button className="apple-signin">
             <FaApple size={16} style={{ marginRight: 10 }} />
-            Sign in with Apple
+            {isSignIn ? "Sign in with Apple" : "Sign up with Apple"}
           </button>
         </div>
         <form>
@@ -44,13 +50,20 @@ const Login = ({ setUser }) => {
           <label>Password</label>
           <input type="password" placeholder="Password" />
           <p>
-            <a href="/">Forgot password?</a>
+            <a id="fp" href="/" onClick={toggleMode}>
+              {isSignIn ? "Forgot password?" : "Remember your password?"}
+            </a>
           </p>
           <button className="blue-signin" onClick={handleUser}>
-            Sign In
+            {isSignIn ? "Sign In" : "Sign Up"}
           </button>
           <p id="text">
-            Don’t have an account? <a href="/">Register here</a>
+            {isSignIn
+              ? "Don’t have an account? "
+              : "Already have an account? "}
+            <a href="/" onClick={toggleMode}>
+              {isSignIn ? "Register here" : "Sign In"}
+            </a>
           </p>
         </form>
       </div>
