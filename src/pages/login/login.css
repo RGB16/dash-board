@@ -68,12 +68,15 @@ font-weight: 700;
 /* line-height: 44px; */
 /* letter-spacing: 0em; */
 text-align: left;
+margin: 0px;
 
 }
 
 .google-signin,
 .apple-signin {
-  background-color: #dadbe0;
+  background-color: unset;
+  color: #858585;
+
   border: none;
   padding: 10px 20px;
   margin: 10px;
@@ -111,6 +114,16 @@ a {
   text-decoration: none;
   color:#4285F4;
 }
+label{
+  padding-left: 0px;
+}
+p{
+  margin: 0;
+  color: #000;
+}
+#text{
+  color: #858585;
+}
 
 @media (max-width: 768px) {
   .left {
@@ -118,7 +131,7 @@ a {
   }
   
   .right {
-    margin-left: 0; /* Remove left margin for smaller screens */
+    margin-left: 0; 
     align-items: center;
   
   }
@@ -131,5 +144,14 @@ a {
   .social-icons {
     width: 100%;
     justify-content: center;
+  }
+
+  .signin-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  form {
+    margin-left: 0;
   }
 }

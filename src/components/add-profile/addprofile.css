@@ -34,13 +34,13 @@ gap: 12px;
 }
 
 .add-icon {
-  font-size: 100px;
+  font-size: 80px;
   color: #999ca0;
   cursor: pointer;
   background: linear-gradient(0deg, #EBEBEB, #EBEBEB),
 linear-gradient(0deg, #F5F5F5, #F5F5F5);
 padding: 10px;
-border-radius: 50%;
+border-radius: 70%;
 
 }
 
@@ -139,6 +139,12 @@ padding: 10px;
 
   }
 
+  .add-icon {
+    padding: 2px;
+    font-size: 50px;
+
+  
+  }
 
 
 }

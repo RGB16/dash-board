@@ -49,7 +49,7 @@ const Login = ({ setUser }) => {
           <button className="blue-signin" onClick={handleUser}>
             Sign In
           </button>
-          <p>
+          <p id="text">
             Don’t have an account? <a href="/">Register here</a>
           </p>
         </form>
