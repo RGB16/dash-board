@@ -8,7 +8,11 @@ function App() {
 
   return (
     <div className="App">
-      {user ? <Dashboard setUser={setUser} /> : <Login  setUser={setUser}/>}
+      {user ? (
+        <Dashboard setUser={setUser} />
+      ) : (
+        <Login setUser={setUser} />
+      )}
     </div>
   );
 }

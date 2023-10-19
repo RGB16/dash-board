@@ -1,4 +1,4 @@
-// src/components/Dashboard/Dashboard.js
+
 import React from 'react';
 import './dashboard.css';
 import Sidebar from '../../components/sidebar/Sidebar';

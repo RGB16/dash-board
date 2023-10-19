@@ -8,13 +8,31 @@ import { FaApple } from "react-icons/fa";
 
 const Login = ({ setUser }) => {
   const [isSignIn, setIsSignIn] = useState(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleUser = () => {
-    setUser(true);
+    if (isSignIn) {
+      // Sign-in logic
+      const storedPassword = localStorage.getItem(email);
+
+      if (storedPassword === password) {
+        setError("");
+        setUser(true);
+      } else {
+        setError("Authentication failed. Check your credentials.");
+      }
+    } else {
+      // Sign-up logic
+      localStorage.setItem(email, password);
+      setError("");
+      setIsSignIn(true); // Auto switch to sign-in after sign-up
+    }
   };
 
   const toggleMode = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     setIsSignIn(!isSignIn);
   };
 
@@ -46,17 +64,28 @@ const Login = ({ setUser }) => {
         </div>
         <form>
           <label>Email address</label>
-          <input type="email" placeholder="Email address" />
+          <input
+            type="email"
+            placeholder="Email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <label>Password</label>
-          <input type="password" placeholder="Password" />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <p>
-            <a   href="/" onClick={toggleMode}>
+            <a href="/" onClick={toggleMode}>
               {isSignIn ? "Forgot password?" : "Remember your password?"}
             </a>
           </p>
           <button className="blue-signin" onClick={handleUser}>
             {isSignIn ? "Sign In" : "Sign Up"}
           </button>
+          {error && <p className="error-message">{error}</p>}
           <p id="text">
             {isSignIn
               ? "Don’t have an account? "

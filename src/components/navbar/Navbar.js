@@ -1,4 +1,3 @@
-// src/components/Dashboard/Navbar.js
 import React from 'react';
 import './navbar.css';
 import { GoSearch } from "react-icons/go";
